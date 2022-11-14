@@ -6,7 +6,7 @@
 /*   By: lcoissar <lcoissar@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:28:48 by lcoissar          #+#    #+#             */
-/*   Updated: 2022/11/12 06:52:51 by lcoissar         ###   ########lyon.fr   */
+/*   Updated: 2022/11/14 08:33:20 by lcoissar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <stdio.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
