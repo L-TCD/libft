@@ -6,7 +6,7 @@
 /*   By: lcoissar <lcoissar@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 08:37:16 by lcoissar          #+#    #+#             */
-/*   Updated: 2022/11/12 12:17:25 by lcoissar         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 06:36:02 by lcoissar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static void	free_all(char **strs)
 	free(strs);
 }
 
-char	**fill_arr(char **strs, char const *s, char c)
+static char	**fill_arr(char **strs, char const *s, char c)
 {
 	int		i;
 	int		j;

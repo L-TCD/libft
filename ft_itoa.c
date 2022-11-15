@@ -6,13 +6,13 @@
 /*   By: lcoissar <lcoissar@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 08:37:44 by lcoissar          #+#    #+#             */
-/*   Updated: 2022/11/12 07:10:09 by lcoissar         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 06:35:22 by lcoissar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	itoa_len(int n)
+static int	itoa_len(int n)
 {
 	int	len;
 
