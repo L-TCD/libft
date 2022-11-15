@@ -6,7 +6,7 @@
 /*   By: lcoissar <lcoissar@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 09:58:43 by lcoissar          #+#    #+#             */
-/*   Updated: 2022/11/11 12:21:15 by lcoissar         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 06:39:30 by lcoissar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	t_list	*next_new;
 
-	if (!lst || !f)
+	if (!lst || !f || !del)
 		return (NULL);
 	current = lst;
 	new_list = ft_lstnew(f(current->content));

@@ -6,7 +6,7 @@
 /*   By: lcoissar <lcoissar@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 08:38:55 by lcoissar          #+#    #+#             */
-/*   Updated: 2022/11/12 12:40:21 by lcoissar         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 06:45:15 by lcoissar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	{
 		while (s[i])
 		{
-			(*f)(i, &s[i]);
+			(*f)(i, s + i);
 			i++;
 		}
 	}
