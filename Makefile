@@ -71,7 +71,7 @@ fclean : clean
 
 re : fclean all
 
-bonus: $(OBJS) $(OBJS_BONUS) $(NAME) all
+bonus: $(OBJS) $(OBJS_BONUS)
 	$(AR) -rcs $(NAME) $(OBJS) $(OBJS_BONUS)
 
 .PHONY: all clean fclean re bonus
