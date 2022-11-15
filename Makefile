@@ -49,18 +49,16 @@ OBJS = $(SRC:.c=.o)
 OBJS_BONUS = $(SRC_BONUS:.c=.o)
 SRC_DIR	= .
 INC_DIR	= .
-OUT	= libft.a
+NAME	= libft.a
 CC = gcc
 AR = ar
 FLAGS = -Wall -Wextra -Werror
 HEADER_FILE	= libft.h
 
-all: $(OUT)
+all: $(NAME)
 
-$(NAME) : $(OBJS) $(AR) $(NAME) $(OBJS) ranlib $(NAME)
-
-$(OUT) : $(OBJS)
-	$(AR) -rcs $(OUT) $(OBJS)
+$(NAME) : $(OBJS)
+	$(AR) -rcs $(NAME) $(OBJS)
 
 %.o: %.c $(HEADER_FILE)
 	$(CC) $(FLAGS) -c $< -o $@  -I $(INC_DIR)
@@ -69,11 +67,11 @@ clean:
 	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean : clean
-	rm -f $(OUT)
+	rm -f $(NAME)
 
 re : fclean all
 
-bonus: $(OBJS) $(OBJS_BONUS) $(OUT) all
-	$(AR) -rcs $(OUT) $(OUT) $(OBJS_BONUS)
+bonus: $(OBJS) $(OBJS_BONUS) $(NAME) all
+	$(AR) -rcs $(NAME) $(OBJS) $(OBJS_BONUS)
 
 .PHONY: all clean fclean re bonus
